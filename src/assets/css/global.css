@@ -1,0 +1,14 @@
+.sidebar a.active {
+    background-color: aliceblue;
+    border-left-color: blue;
+}
+
+body,
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    height: calc(100vh - 64px);
+}

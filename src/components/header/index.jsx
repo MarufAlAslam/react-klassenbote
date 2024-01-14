@@ -10,7 +10,7 @@ import logo from "../../assets/images/logo.png";
 
 const Header = () => {
   return (
-    <header className="p-[20px] shadow-md flex justify-between items-center gap-2">
+    <header className="p-[20px] shadow-md flex justify-between items-center gap-2 relative z-100">
       <div className="search w-[40%] flex items-center gap-2">
         <Link to="/" className="text-xl font-bold mr-6">
           <img src={logo} className="logo w-[200px]" alt="" />
