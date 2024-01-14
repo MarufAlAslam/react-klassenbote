@@ -7,7 +7,7 @@ const MainLayout = () => {
   return (
     <div>
       <Header />
-      <div className="flex bg-[aliceblue] min-h-screen gap-5 justify-between items-start">
+      <div className="flex bg-[#f5f8fa] min-h-screen gap-5 justify-between items-start">
         <Sidebar />
         <div className="w-full p-5">
           <Outlet />

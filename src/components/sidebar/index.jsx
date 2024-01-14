@@ -16,7 +16,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <IoHomeOutline className="text-xl" />
             <span className="text-black">Dashboard</span>
@@ -25,7 +25,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/alle-schulen"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <IoStatsChartSharp className="text-xl" />
             <span className="text-black">Alle Schulen</span>
@@ -34,7 +34,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/schule-hinzufügen"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <IoStatsChartSharp className="text-xl" />
             <span className="text-black">Schule hinzufügen</span>
@@ -43,7 +43,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/dokumenten-bibliotek"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <BsBox2 className="text-xl" />
             <span className="text-black">Dokumenten Bibliotek</span>
@@ -52,7 +52,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/vereinbarungen"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <FaRegFileAlt className="text-xl" />
             <span className="text-black">Vereinbarungen</span>
@@ -61,7 +61,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/email-log"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <HiBars3CenterLeft className="text-xl" />
             <span className="text-black">E-Mail Log</span>
@@ -70,7 +70,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/system-log"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <HiBars3CenterLeft className="text-xl" />
             <span className="text-black">System Log</span>
@@ -79,7 +79,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/zahlungen"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <FiCreditCard className="text-xl" />
             <span className="text-black">Zahlungen</span>
@@ -88,7 +88,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/backup"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <HiOutlineServer className="text-xl" />
             <span className="text-black">Backup</span>
@@ -97,7 +97,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/broadcaster"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <IoIosInformationCircleOutline className="text-xl" />
             <span className="text-black">Broadcaster</span>
@@ -106,7 +106,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/ticketsysteme"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <GoInbox className="text-xl" />
             <span className="text-black">Ticketsystem</span>
@@ -115,7 +115,7 @@ const Sidebar = () => {
         <li>
           <NavLink
             to="/settings"
-            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-blue-50 border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
+            className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <TiCogOutline className="text-xl" />
             <span className="text-black">Settings</span>
