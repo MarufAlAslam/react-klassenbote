@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { DatePicker, Select } from "antd";
 import StatCard from "../../components/statCard";
 import LineChart1 from "../../components/line-chart";
+import { GrDocumentDownload } from "react-icons/gr";
+import TinyBarChart from "../../components/tinyBarChart";
+import TinyLineChart from "../../components/tiny-line-chart";
+import { Link } from "react-router-dom";
+import { FaChevronRight } from "react-icons/fa";
 
 const Dashboard = () => {
   const [isActive, setIsActive] = useState(1);
@@ -103,7 +108,7 @@ const Dashboard = () => {
         ))}
       </div>
 
-      <div className="card bg-white p-4 rounded">
+      <div className="card bg-white px-5 py-7 rounded">
         <div className="flex mb-5 justify-between items-center">
           <p className="text-lg font-bold">Gesendete E-Mails</p>
           <Select
@@ -118,6 +123,51 @@ const Dashboard = () => {
           />
         </div>
         <LineChart1 />
+      </div>
+
+      <div className="grid grid-cols-3 mt-4 justify-between items-start gap-4">
+        <div className="col-span-2">
+          <div className="card w-full bg-white px-5 py-7 rounded">
+            <div className="flex justify-between items-center">
+              <p className="text-lg font-bold">Sales Report</p>
+              <button className="btn border border-gray-300 text-gray-400 px-4 py-1 rounded text-sm flex justify-center items-center gap-3">
+                <GrDocumentDownload />
+                <span>Export</span>
+              </button>
+            </div>
+
+            <div className="mt-14">
+              <TinyBarChart />
+            </div>
+          </div>
+        </div>
+        <div className="col-span-1 h-full">
+          <div className="card flex flex-col justify-center h-full w-full bg-white px-5 py-7 rounded">
+            <div className="flex justify-between items-center">
+              <p className="text-lg font-bold">MAILGUN LIMIT</p>
+            </div>
+            <h3 className="mt-6 text-2xl font-bold">15.149 / 50.000</h3>
+
+            <div className="flex mt-3 justify-start items-center gap-2">
+              <span className={`font-bold text-sm text-green-500`}>1.8%</span>
+              <span className={`font-bold text-sm mb-1 text-green-500`}>↑</span>
+              <span className={`font-normal text-sm mb-1 text-gray-400`}>
+                in diesen Monat
+              </span>
+            </div>
+
+            <div className="line mt-6 h-[1px] bg-black"></div>
+            <TinyLineChart />
+            <div className="line mt-6 h-[1px] bg-black"></div>
+
+            <Link
+              to="/"
+              className="text-blue-500 font-semibold text-sm mt-6 flex items-center gap-2"
+            >
+              Mailgun Updaten <FaChevronRight />
+            </Link>
+          </div>
+        </div>
       </div>
     </main>
   );
