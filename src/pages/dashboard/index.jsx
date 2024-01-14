@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { DatePicker } from "antd";
+import { DatePicker, Select } from "antd";
 import StatCard from "../../components/statCard";
+import LineChart1 from "../../components/line-chart";
 
 const Dashboard = () => {
   const [isActive, setIsActive] = useState(1);
@@ -96,10 +97,27 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="my-8 grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-3">
+      <div className="mt-8 mb-4 grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-3">
         {cardData.map((item) => (
           <StatCard key={item.id} data={item} />
         ))}
+      </div>
+
+      <div className="card bg-white p-4 rounded">
+        <div className="flex mb-5 justify-between items-center">
+          <p className="text-lg font-bold">Gesendete E-Mails</p>
+          <Select
+            defaultValue="letzten 12 Monate"
+            className="border-0 p-0 text-sm"
+            style={{ width: 200, border: 0, fontSize: "10px" }}
+            // onChange={handleChange}
+            options={[
+              { value: "letzten 12 Monate", label: "letzten 12 Monate" },
+              { value: "letzten 15 Monate", label: "letzten 15 Monate" },
+            ]}
+          />
+        </div>
+        <LineChart1 />
       </div>
     </main>
   );

@@ -1,6 +1,6 @@
 .sidebar a.active {
     background-color: #f5f8fa;
-    border-left-color: blue;
+    border-left-color: #4040ce;
 }
 
 body,
@@ -9,6 +9,11 @@ html {
     overflow: hidden;
 }
 
-.sidebar {
+.sidebar,
+.main-screen {
     height: calc(100vh - 64px);
+}
+
+.chart-container {
+    height: 400px !important;
 }

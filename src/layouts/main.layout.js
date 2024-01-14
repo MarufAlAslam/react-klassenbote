@@ -9,7 +9,7 @@ const MainLayout = () => {
       <Header />
       <div className="flex bg-[#f5f8fa] min-h-screen gap-5 justify-between items-start">
         <Sidebar />
-        <div className="w-full p-5">
+        <div className="w-full p-5 main-screen overflow-y-auto">
           <Outlet />
         </div>
       </div>
