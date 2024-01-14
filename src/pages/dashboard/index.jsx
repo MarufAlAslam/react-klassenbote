@@ -6,7 +6,8 @@ import { GrDocumentDownload } from "react-icons/gr";
 import TinyBarChart from "../../components/tinyBarChart";
 import TinyLineChart from "../../components/tiny-line-chart";
 import { Link } from "react-router-dom";
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaRegEnvelope } from "react-icons/fa";
+import { RxAvatar } from "react-icons/rx";
 
 const Dashboard = () => {
   const [isActive, setIsActive] = useState(1);
@@ -168,6 +169,189 @@ const Dashboard = () => {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="grid grid-cols-3 mt-4 justify-between items-start gap-4">
+        <div className="col-span-2">
+          <div className="card w-full bg-white px-5 py-7 rounded">
+            <div className="h-[200px] overflow-y-auto">
+              <table className="table w-full">
+                <thead>
+                  <th className="border p-2 text-sm">SCHULE</th>
+                  <th className="border p-2 text-sm">THEMA</th>
+                  <th className="border p-2 text-sm">KATEGORIE</th>
+                  <th className="border p-2 text-sm">TICKET-NR.</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border p-2 text-sm text-center">
+                      Paid search
+                    </td>
+                    <td className="border p-2 text-sm text-center">
+                      "Wie funktioniert das alles*
+                    </td>
+                    <td className="border p-2 text-sm text-center">NORMAL</td>
+                    <td className="border p-2 text-sm text-center">#0124</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-2 text-sm text-center">
+                      Organic search
+                    </td>
+                    <td className="border p-2 text-sm text-center">
+                      "Wie funktioniert das alles*
+                    </td>
+                    <td className="border p-2 text-sm text-center">KRITISCH</td>
+                    <td className="border p-2 text-sm text-center">#0125</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-2 text-sm text-center">Email</td>
+                    <td className="border p-2 text-sm text-center">
+                      "Wie funktioniert das alles*
+                    </td>
+                    <td className="border p-2 text-sm text-center">WICHTIG</td>
+                    <td className="border p-2 text-sm text-center">#0126</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-2 text-sm text-center">
+                      Paid search
+                    </td>
+                    <td className="border p-2 text-sm text-center">
+                      "Wie funktioniert das alles*
+                    </td>
+                    <td className="border p-2 text-sm text-center">NORMAL</td>
+                    <td className="border p-2 text-sm text-center">#0127</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-2 text-sm text-center">
+                      Paid search
+                    </td>
+                    <td className="border p-2 text-sm text-center">
+                      "Wie funktioniert das alles*
+                    </td>
+                    <td className="border p-2 text-sm text-center">NORMAL</td>
+                    <td className="border p-2 text-sm text-center">#0127</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-2 text-sm text-center">
+                      Paid search
+                    </td>
+                    <td className="border p-2 text-sm text-center">
+                      "Wie funktioniert das alles*
+                    </td>
+                    <td className="border p-2 text-sm text-center">NORMAL</td>
+                    <td className="border p-2 text-sm text-center">#0127</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-2 text-sm text-center">
+                      Paid search
+                    </td>
+                    <td className="border p-2 text-sm text-center">
+                      "Wie funktioniert das alles*
+                    </td>
+                    <td className="border p-2 text-sm text-center">NORMAL</td>
+                    <td className="border p-2 text-sm text-center">#0127</td>
+                  </tr>
+                  <tr>
+                    <td className="border p-2 text-sm text-center">
+                      Paid search
+                    </td>
+                    <td className="border p-2 text-sm text-center">
+                      "Wie funktioniert das alles*
+                    </td>
+                    <td className="border p-2 text-sm text-center">NORMAL</td>
+                    <td className="border p-2 text-sm text-center">#0127</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="pagination mt-5 flex justify-center items-center gap-2">
+              <button className="btn text-gray-400 px-4 py-1 rounded text-sm flex justify-center items-center gap-3">
+                <FaChevronLeft />
+              </button>
+              <button className="btn bg-blue-500 text-white px-4 py-1 rounded text-sm flex justify-center items-center gap-3">
+                1
+              </button>
+              <button className="btn text-gray-400 px-4 py-1 rounded text-sm flex justify-center items-center gap-3">
+                2
+              </button>
+              <button className="btn text-gray-400 px-4 py-1 rounded text-sm flex justify-center items-center gap-3">
+                3
+              </button>
+              <button className="btn text-gray-400 px-4 py-1 rounded text-sm flex justify-center items-center gap-3">
+                4
+              </button>
+              <button className="btn text-gray-400 px-4 py-1 rounded text-sm flex justify-center items-center gap-3">
+                5
+              </button>
+              <button className="btn text-gray-400 px-4 py-1 rounded text-sm flex justify-center items-center gap-3">
+                <FaChevronRight />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="col-span-1 h-full">
+          <div className="card h-full w-full bg-white px-5 py-7 rounded">
+            <div className="flex justify-between items-center">
+              <p className="text-lg font-bold">Neue Schulen</p>
+            </div>
+
+            <div className="flex mt-4 justify-between items-center">
+              <div className="flex justify-start items-center gap-3">
+                <RxAvatar className="text-2xl text-gray-500" />
+                <div className="details">
+                  <p className="text-sm font-semibold">Herr Müller</p>
+                  <p className="text-xs text-gray-400">Customer ID#01223</p>
+                </div>
+              </div>
+              <Link
+                to="/"
+                className="text-gray-500 font-semibold text-sm flex items-center gap-2"
+              >
+                <FaRegEnvelope />
+              </Link>
+            </div>
+            <div className="flex mt-4 justify-between items-center">
+              <div className="flex justify-start items-center gap-3">
+                <RxAvatar className="text-2xl text-gray-500" />
+                <div className="details">
+                  <p className="text-sm font-semibold">Herr Müller</p>
+                  <p className="text-xs text-gray-400">Customer ID#01223</p>
+                </div>
+              </div>
+              <Link
+                to="/"
+                className="text-gray-500 font-semibold text-sm flex items-center gap-2"
+              >
+                <FaRegEnvelope />
+              </Link>
+            </div>
+            <div className="flex mt-4 justify-between items-center">
+              <div className="flex justify-start items-center gap-3">
+                <RxAvatar className="text-2xl text-gray-500" />
+                <div className="details">
+                  <p className="text-sm font-semibold">Herr Müller</p>
+                  <p className="text-xs text-gray-400">Customer ID#01223</p>
+                </div>
+              </div>
+              <Link
+                to="/"
+                className="text-gray-500 font-semibold text-sm flex items-center gap-2"
+              >
+                <FaRegEnvelope />
+              </Link>
+            </div>
+            <Link
+              to="/"
+              className="text-blue-500 font-semibold text-sm mt-6 flex items-center gap-2"
+            >
+              Mailgun Updaten <FaChevronRight />
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="copyright pt-5 text-center">
+        <p className="text-sm font-bold">© 2023 KLASSENBOTE.DE</p>
       </div>
     </main>
   );
