@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/main.layout";
 import Dashboard from "../pages/dashboard";
 import AlleSchulen from "../pages/alle-schulen";
+import SchuleHinzufugen from "../pages/schule-hinzufügen";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
       {
         path: "/alle-schulen",
         element: <AlleSchulen />,
+      },
+      {
+        path: "/schule-hinzufügen",
+        element: <SchuleHinzufugen />,
       },
       {
         path: "*",
