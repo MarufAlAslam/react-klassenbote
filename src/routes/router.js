@@ -3,6 +3,7 @@ import MainLayout from "../layouts/main.layout";
 import Dashboard from "../pages/dashboard";
 import AlleSchulen from "../pages/alle-schulen";
 import SchuleHinzufugen from "../pages/schule-hinzufügen";
+import DocumentenBibliotek from "../pages/dokumenten-bibliotek";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: "/schule-hinzufügen",
         element: <SchuleHinzufugen />,
+      },
+      {
+        path: "/dokumenten-bibliotek",
+        element: <DocumentenBibliotek />,
       },
       {
         path: "*",
