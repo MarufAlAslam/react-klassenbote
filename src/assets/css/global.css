@@ -33,5 +33,11 @@ html {
         position: fixed;
         width: 100%;
         top: 65px;
+        z-index: 1000;
+        left: 0;
+    }
+
+    .pagination {
+        gap: 0;
     }
 }

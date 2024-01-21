@@ -64,9 +64,9 @@ const Dashboard = () => {
   ];
   return (
     <main>
-      <div className="flex justify-between items-center gap-3">
+      <div className="flex md:flex-row flex-col justify-between items-center gap-3">
         <h2 className="text-xl font-bold">Dashboard</h2>
-        <div className="flex justify-end items-center gap-5">
+        <div className="flex md:flex-row flex-col justify-end items-center gap-5">
           <div className="flex justify-end items-center">
             <button
               onClick={() => setIsActive(1)}
@@ -103,14 +103,14 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="mt-8 mb-4 grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-3">
+      <div className="mt-8 mb-4 grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-3">
         {cardData.map((item) => (
           <StatCard key={item.id} data={item} />
         ))}
       </div>
 
       <div className="card bg-white px-5 py-7 rounded">
-        <div className="flex mb-5 justify-between items-center">
+        <div className="flex md:flex-row flex-col mb-5 justify-between items-start gap-2 md:items-center">
           <p className="text-lg font-bold">Gesendete E-Mails</p>
           <Select
             defaultValue="letzten 12 Monate"
@@ -126,10 +126,10 @@ const Dashboard = () => {
         <LineChart1 />
       </div>
 
-      <div className="grid grid-cols-3 mt-4 justify-between items-start gap-4">
-        <div className="col-span-2">
+      <div className="grid lg:grid-cols-3 grid-cols-1 mt-4 justify-between items-start gap-4">
+        <div className="lg:col-span-2">
           <div className="card w-full bg-white px-5 py-7 rounded">
-            <div className="flex justify-between items-center">
+            <div className="flex md:flex-row flex-col justify-between items-start gap-2 md:items-center">
               <p className="text-lg font-bold">Sales Report</p>
               <button className="btn border border-gray-300 text-gray-400 px-4 py-1 rounded text-sm flex justify-center items-center gap-3">
                 <GrDocumentDownload />
@@ -170,8 +170,8 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 mt-4 justify-between items-start gap-4">
-        <div className="col-span-2">
+      <div className="grid lg:grid-cols-3 grid-cols-1 mt-4 justify-between items-start gap-4">
+        <div className="lg:col-span-2">
           <div className="card w-full bg-white px-5 py-7 rounded">
             <div className="h-[200px] overflow-y-auto">
               <table className="table w-full">
