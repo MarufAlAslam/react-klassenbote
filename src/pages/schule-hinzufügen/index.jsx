@@ -7,7 +7,7 @@ const SchuleHinzufugen = () => {
         <h2 className="text-xl font-bold">Schule hinzufügen</h2>
       </div>
 
-      <div className="card mt-6 mb-4 bg-white p-8 rounded-[8px]">
+      <div className="card mt-6 mb-4 bg-white md:p-8 p-3 rounded-[8px]">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
           <div className="item">
             <div className="text-center">
