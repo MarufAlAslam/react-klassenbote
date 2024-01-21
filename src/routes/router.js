@@ -5,6 +5,7 @@ import AlleSchulen from "../pages/alle-schulen";
 import SchuleHinzufugen from "../pages/schule-hinzufügen";
 import DocumentenBibliotek from "../pages/dokumenten-bibliotek";
 import Vereinbarungen from "../pages/vereinbarungen";
+import EmailLog from "../pages/email-log";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
       {
         path: "/vereinbarungen",
         element: <Vereinbarungen />,
+      },
+      {
+        path: "/email-log",
+        element: <EmailLog />,
       },
       {
         path: "*",
