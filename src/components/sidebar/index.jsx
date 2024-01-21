@@ -9,7 +9,7 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 import { TiCogOutline } from "react-icons/ti";
 import { GoInbox } from "react-icons/go";
 
-const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
+const Sidebar = ({ sidebarVisible, toggleSidebar, screenWidth }) => {
   return (
     <aside
       className={`sidebar bg-white md:w-[300px] overflow-y-auto w-full py-3 transition-[0.8s] pr-3 ${
@@ -19,7 +19,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
       <ul className="flex flex-col gap-2">
         <li>
           <NavLink
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             to="/"
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
@@ -29,7 +29,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         </li>
         <li>
           <NavLink
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             to="/alle-schulen"
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
@@ -39,7 +39,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         </li>
         <li>
           <NavLink
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             to="/schule-hinzufügen"
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
@@ -49,7 +49,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         </li>
         <li>
           <NavLink
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             to="/dokumenten-bibliotek"
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
@@ -59,7 +59,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         </li>
         <li>
           <NavLink
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             to="/vereinbarungen"
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
@@ -69,7 +69,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         </li>
         <li>
           <NavLink
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             to="/email-log"
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
@@ -80,7 +80,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         <li>
           <NavLink
             to="/system-log"
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <HiBars3CenterLeft className="text-xl" />
@@ -90,7 +90,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         <li>
           <NavLink
             to="/zahlungen"
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <FiCreditCard className="text-xl" />
@@ -100,7 +100,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         <li>
           <NavLink
             to="/backup"
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <HiOutlineServer className="text-xl" />
@@ -110,7 +110,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         <li>
           <NavLink
             to="/broadcaster"
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
             <IoIosInformationCircleOutline className="text-xl" />
@@ -119,7 +119,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         </li>
         <li>
           <NavLink
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             to="/ticketsysteme"
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >
@@ -129,7 +129,7 @@ const Sidebar = ({ sidebarVisible, toggleSidebar }) => {
         </li>
         <li>
           <NavLink
-            onClick={toggleSidebar}
+            onClick={screenWidth < 767 && toggleSidebar}
             to="/settings"
             className="text-gray-500 font-semibold p-3 rounded-r-md hover:bg-[#f5f8fa] border-l-[3px] border-l-transparent hover:border-l-blue-500 text-xs gap-2 flex items-center"
           >

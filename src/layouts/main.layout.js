@@ -27,6 +27,7 @@ const MainLayout = () => {
         <Sidebar
           sidebarVisible={sidebarVisible}
           toggleSidebar={toggleSidebar}
+          screenWidth={screenWidth}
         />
         <div className="w-full md:p-5 p-2 pt-5 main-screen overflow-y-auto">
           <Outlet />
