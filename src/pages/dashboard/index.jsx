@@ -174,7 +174,7 @@ const Dashboard = () => {
         <div className="lg:col-span-2">
           <div className="card w-full bg-white px-5 py-7 rounded">
             <div className="h-[200px] overflow-y-auto">
-              <table className="table w-full">
+              <table className="table w-[180%] md:w-full">
                 <thead>
                   <th className="border p-2 text-sm">SCHULE</th>
                   <th className="border p-2 text-sm">THEMA</th>
