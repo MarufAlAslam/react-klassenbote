@@ -4,6 +4,7 @@ import Dashboard from "../pages/dashboard";
 import AlleSchulen from "../pages/alle-schulen";
 import SchuleHinzufugen from "../pages/schule-hinzufügen";
 import DocumentenBibliotek from "../pages/dokumenten-bibliotek";
+import Vereinbarungen from "../pages/vereinbarungen";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
       {
         path: "/dokumenten-bibliotek",
         element: <DocumentenBibliotek />,
+      },
+      {
+        path: "/vereinbarungen",
+        element: <Vereinbarungen />,
       },
       {
         path: "*",

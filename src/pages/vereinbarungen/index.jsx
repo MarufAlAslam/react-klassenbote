@@ -2,11 +2,11 @@ import React from "react";
 import { FaCog } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const DocumentenBibliotek = () => {
+const Vereinbarungen = () => {
   return (
     <main>
       <div className="flex justify-between items-center gap-3">
-        <h2 className="text-xl font-bold">Dokumenten Bibliotek</h2>
+        <h2 className="text-xl font-bold">Vereinbarungen</h2>
       </div>
 
       <div className="mt-6 mb-4 p-8 bg-white rounded-[8px]">
@@ -32,7 +32,7 @@ const DocumentenBibliotek = () => {
             <tr>
               <td className="border-b text-sm p-3 text-left">
                 <Link to="/dokumenten-bibliotek/1">
-                  Datenschutzerklärung.pdf
+                  Vertragsunterlagen_SCHULE_20.05.2023.pd
                 </Link>
               </td>
               <td className="border-b text-sm p-3 text-left">2,45 MB</td>
@@ -46,7 +46,7 @@ const DocumentenBibliotek = () => {
             <tr>
               <td className="border-b text-sm p-3 text-left">
                 <Link to="/dokumenten-bibliotek/2">
-                  HOW_TO_USE_KLASSENBOTE.pd
+                  Datenschutzerklärung_SCHULE_UNTERSCHRIEBEN.pdf
                 </Link>
               </td>
               <td className="border-b text-sm p-3 text-left">2,45 MB</td>
@@ -68,4 +68,4 @@ const DocumentenBibliotek = () => {
   );
 };
 
-export default DocumentenBibliotek;
+export default Vereinbarungen;
