@@ -10,51 +10,55 @@ const AlleSchulen = () => {
         <h2 className="text-xl font-bold">Alle Schulen</h2>
       </div>
 
-      <div className="grid mt-8 mb-4 grid-cols-3 gap-5 rounded-[8px] overflow-hidden">
+      <div className="md:grid flex flex-col md:mt-8 mt-4 mb-4 grid-cols-3 gap-5 rounded-[8px] overflow-hidden">
         <div className="card flex flex-col justify-between shadow col-span-2 h-full bg-white">
-          <table className="table border-0 w-full">
-            <thead>
-              <th className="bg-[#F5F8FA] p-3 text-left text-[12px]">SCHULE</th>
-              <th className="bg-[#F5F8FA] p-3 text-left text-[12px]">
-                E-MAIL LIMIT
-              </th>
-              <th className="bg-[#F5F8FA] p-3 text-left text-[12px]">
-                SUPPORT VORHANDEN
-              </th>
-              <th className="bg-[#F5F8FA] p-3 text-left text-[12px]">
-                VERTRAGSENDE
-              </th>
-              <th className="bg-[#F5F8FA]"></th>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="bg-white p-3 text-left text-[12px]">
-                  SCHULNAME
-                </td>
-                <td className="bg-white p-3 text-left text-[12px]">20.000</td>
-                <td className="bg-white p-3 text-left text-[12px]">Ja</td>
-                <td className="bg-white p-3 text-left text-[12px]">
-                  01.01.2026
-                </td>
-                <td className="bg-white p-3 text-left text-[12px]">
-                  <FaCog />
-                </td>
-              </tr>
-              <tr>
-                <td className="bg-white p-3 text-left text-[12px]">
-                  SCHULNAME
-                </td>
-                <td className="bg-white p-3 text-left text-[12px]">5.000</td>
-                <td className="bg-white p-3 text-left text-[12px]">Nein</td>
-                <td className="bg-white p-3 text-left text-[12px]">
-                  01.01.2026
-                </td>
-                <td className="bg-white p-3 text-left text-[12px]">
-                  <FaCog />
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table className="table border-0 md:w-full w-[180%]">
+              <thead>
+                <th className="bg-[#F5F8FA] p-3 text-left text-[12px]">
+                  SCHULE
+                </th>
+                <th className="bg-[#F5F8FA] p-3 text-left text-[12px]">
+                  E-MAIL LIMIT
+                </th>
+                <th className="bg-[#F5F8FA] p-3 text-left text-[12px]">
+                  SUPPORT VORHANDEN
+                </th>
+                <th className="bg-[#F5F8FA] p-3 text-left text-[12px]">
+                  VERTRAGSENDE
+                </th>
+                <th className="bg-[#F5F8FA]"></th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="bg-white p-3 text-left text-[12px]">
+                    SCHULNAME
+                  </td>
+                  <td className="bg-white p-3 text-left text-[12px]">20.000</td>
+                  <td className="bg-white p-3 text-left text-[12px]">Ja</td>
+                  <td className="bg-white p-3 text-left text-[12px]">
+                    01.01.2026
+                  </td>
+                  <td className="bg-white p-3 text-left text-[12px]">
+                    <FaCog />
+                  </td>
+                </tr>
+                <tr>
+                  <td className="bg-white p-3 text-left text-[12px]">
+                    SCHULNAME
+                  </td>
+                  <td className="bg-white p-3 text-left text-[12px]">5.000</td>
+                  <td className="bg-white p-3 text-left text-[12px]">Nein</td>
+                  <td className="bg-white p-3 text-left text-[12px]">
+                    01.01.2026
+                  </td>
+                  <td className="bg-white p-3 text-left text-[12px]">
+                    <FaCog />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div className="pagination mb-10 mt-5 flex justify-center items-center gap-2">
             <button className="btn text-gray-400 px-4 py-1 rounded text-sm flex justify-center items-center gap-3">
               <FaChevronLeft />

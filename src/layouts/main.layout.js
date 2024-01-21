@@ -10,7 +10,7 @@ const MainLayout = () => {
     <div>
       <Header toggleSidebar={toggleSidebar} />
       <div className="flex bg-[#f5f8fa] min-h-screen gap-5 justify-between items-start">
-        <Sidebar sidebarVisible={sidebarVisible} />
+        <Sidebar sidebarVisible={sidebarVisible} toggleSidebar={toggleSidebar} />
         <div className="w-full md:p-5 p-2 main-screen overflow-y-auto">
           <Outlet />
         </div>
