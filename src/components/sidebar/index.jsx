@@ -9,9 +9,9 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 import { TiCogOutline } from "react-icons/ti";
 import { GoInbox } from "react-icons/go";
 
-const Sidebar = () => {
+const Sidebar = ({sidebarVisible}) => {
   return (
-    <aside className="sidebar bg-white md:w-[300px] overflow-y-auto w-full py-3 pr-3">
+    <aside className={`sidebar bg-white md:w-[300px] overflow-y-auto w-full py-3 transition-[0.8s] pr-3 ${sidebarVisible ? 'translate-x-0' : 'translate-x-[-100%]'}`}>
       <ul className="flex flex-col gap-2">
         <li>
           <NavLink

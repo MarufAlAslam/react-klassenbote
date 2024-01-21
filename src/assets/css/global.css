@@ -3,6 +3,7 @@
     border-left-color: #4040ce;
     color: #4040ce !important;
 }
+
 .sidebar a.active span {
     color: #4040ce !important;
 }
@@ -25,4 +26,12 @@ html {
 .recharts-responsive-container.h-\[10px\] {
     height: 15px !important;
     margin-top: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .sidebar {
+        position: fixed;
+        width: 100%;
+        top: 65px;
+    }
 }

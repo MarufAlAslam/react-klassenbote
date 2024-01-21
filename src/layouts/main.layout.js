@@ -4,11 +4,13 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "../components/sidebar";
 
 const MainLayout = () => {
+  const [sidebarVisible, setSidebarVisible] = React.useState(true);
+  const toggleSidebar = () => setSidebarVisible(!sidebarVisible);
   return (
     <div>
-      <Header />
+      <Header toggleSidebar={toggleSidebar} />
       <div className="flex bg-[#f5f8fa] min-h-screen gap-5 justify-between items-start">
-        <Sidebar />
+        <Sidebar sidebarVisible={sidebarVisible} />
         <div className="w-full p-5 main-screen overflow-y-auto">
           <Outlet />
         </div>
