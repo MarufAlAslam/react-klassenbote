@@ -6,8 +6,8 @@ import { GrDocumentDownload } from "react-icons/gr";
 import TinyBarChart from "../../components/tinyBarChart";
 import TinyLineChart from "../../components/tiny-line-chart";
 import { Link } from "react-router-dom";
-import { FaChevronLeft, FaChevronRight, FaRegEnvelope } from "react-icons/fa";
-import { RxAvatar } from "react-icons/rx";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import ProfileCard from "../../components/profile-card";
 
 const Dashboard = () => {
   const [isActive, setIsActive] = useState(1);
@@ -295,51 +295,10 @@ const Dashboard = () => {
               <p className="text-lg font-bold">Neue Schulen</p>
             </div>
 
-            <div className="flex mt-4 justify-between items-center">
-              <div className="flex justify-start items-center gap-3">
-                <RxAvatar className="text-2xl text-gray-500" />
-                <div className="details">
-                  <p className="text-sm font-semibold">Herr Müller</p>
-                  <p className="text-xs text-gray-400">Customer ID#01223</p>
-                </div>
-              </div>
-              <Link
-                to="/"
-                className="text-gray-500 font-semibold text-sm flex items-center gap-2"
-              >
-                <FaRegEnvelope />
-              </Link>
-            </div>
-            <div className="flex mt-4 justify-between items-center">
-              <div className="flex justify-start items-center gap-3">
-                <RxAvatar className="text-2xl text-gray-500" />
-                <div className="details">
-                  <p className="text-sm font-semibold">Herr Müller</p>
-                  <p className="text-xs text-gray-400">Customer ID#01223</p>
-                </div>
-              </div>
-              <Link
-                to="/"
-                className="text-gray-500 font-semibold text-sm flex items-center gap-2"
-              >
-                <FaRegEnvelope />
-              </Link>
-            </div>
-            <div className="flex mt-4 justify-between items-center">
-              <div className="flex justify-start items-center gap-3">
-                <RxAvatar className="text-2xl text-gray-500" />
-                <div className="details">
-                  <p className="text-sm font-semibold">Herr Müller</p>
-                  <p className="text-xs text-gray-400">Customer ID#01223</p>
-                </div>
-              </div>
-              <Link
-                to="/"
-                className="text-gray-500 font-semibold text-sm flex items-center gap-2"
-              >
-                <FaRegEnvelope />
-              </Link>
-            </div>
+            <ProfileCard name="Herr Müller" id="01223" />
+            <ProfileCard name="Herr Müller" id="01223" />
+            <ProfileCard name="Herr Müller" id="01223" />
+
             <Link
               to="/"
               className="text-blue-500 font-semibold text-sm mt-6 flex items-center gap-2"
