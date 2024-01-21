@@ -146,9 +146,9 @@ const SystemLog = () => {
   ];
   return (
     <main>
-      <div className="flex justify-between items-center gap-3">
+      <div className="flex md:flex-row flex-col justify-between items-center gap-3">
         <h2 className="text-xl font-bold">System Log</h2>
-        <div className="flex justify-end items-center gap-5">
+        <div className="flex md:flex-row flex-col justify-end items-center gap-5">
           <div className="flex justify-end items-center">
             <button
               onClick={() => setIsActive(1)}
@@ -186,39 +186,51 @@ const SystemLog = () => {
       </div>
 
       <div className="mt-10 bg-white pb-6 mb-4 rounded-[8px]">
-        <table className="table w-full mb-[200px]">
-          <thead>
-            <th className="bg-[#F5F8FA] px-8 text-xs py-3 text-left">ABSENDER</th>
-            <th className="bg-[#F5F8FA] px-8 text-xs py-3 text-left">EMPFÄNGER</th>
-            <th className="bg-[#F5F8FA] px-8 text-xs py-3 text-left">DATUM</th>
-            <th className="bg-[#F5F8FA] px-8 text-xs py-3 text-left">BETREFF</th>
-            <th className="bg-[#F5F8FA] px-8 text-xs py-3 text-left">
-              E-MAIL INHALT
-            </th>
-          </thead>
-          <tbody>
-            {tableData.map((item) => (
-              <tr key={item.id}>
-                <td className="bg-white px-8 text-xs py-3 text-left">
-                  <Link to="mailto:user@mail.de">{item.sender}</Link>
-                </td>
-                <td className="bg-white px-8 text-xs py-3 text-left">
-                  <Link to="mailto:user@mail.de">{item.receiver}</Link>
-                </td>
-                <td className="bg-white px-8 text-xs py-3 text-left">{item.date}</td>
-                <td className="bg-white px-8 text-xs py-3 text-left">
-                  {item.subject}
-                </td>
-                <td className="bg-white px-8 text-xs py-3 text-left">
-                  <div className="flex text-xs justify-start items-center gap-2">
-                    <span>{item.content}</span>
-                    <FaSearch className="text-blue-400" />
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <div className="overflow-x-auto">
+          <table className="table w-[400%] md:w-full mb-[200px]">
+            <thead>
+              <th className="bg-[#F5F8FA] px-8 text-xs py-3 text-left">
+                ABSENDER
+              </th>
+              <th className="bg-[#F5F8FA] px-8 text-xs py-3 text-left">
+                EMPFÄNGER
+              </th>
+              <th className="bg-[#F5F8FA] px-8 text-xs py-3 text-left">
+                DATUM
+              </th>
+              <th className="bg-[#F5F8FA] px-8 text-xs py-3 text-left">
+                BETREFF
+              </th>
+              <th className="bg-[#F5F8FA] px-8 text-xs py-3 text-left">
+                E-MAIL INHALT
+              </th>
+            </thead>
+            <tbody>
+              {tableData.map((item) => (
+                <tr key={item.id}>
+                  <td className="bg-white px-8 text-xs py-3 text-left">
+                    <Link to="mailto:user@mail.de">{item.sender}</Link>
+                  </td>
+                  <td className="bg-white px-8 text-xs py-3 text-left">
+                    <Link to="mailto:user@mail.de">{item.receiver}</Link>
+                  </td>
+                  <td className="bg-white px-8 text-xs py-3 text-left">
+                    {item.date}
+                  </td>
+                  <td className="bg-white px-8 text-xs py-3 text-left">
+                    {item.subject}
+                  </td>
+                  <td className="bg-white px-8 text-xs py-3 text-left">
+                    <div className="flex text-xs justify-start items-center gap-2">
+                      <span>{item.content}</span>
+                      <FaSearch className="text-blue-400" />
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
         <div className="pagination mt-5 flex justify-center items-center gap-2">
           <button className="btn text-gray-400 px-4 py-1 rounded text-sm flex justify-center items-center gap-3">
