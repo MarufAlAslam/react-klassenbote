@@ -49,7 +49,7 @@ const DocumentenBibliotek = () => {
               <tr>
                 <td className="border-b text-sm p-3 text-left">
                   <Link to="/dokumenten-bibliotek/2">
-                    HOW_TO_USE_KLASSENBOTE.pd
+                    HOW_TO_USE_KLASSENBOTE.pdf
                   </Link>
                 </td>
                 <td className="border-b text-sm p-3 text-left">2,45 MB</td>
